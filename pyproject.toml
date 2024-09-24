@@ -50,3 +50,6 @@ constraint-dependencies = ["hyperspy>=1.7.6"]
 
 [tool.setuptools.packages.find]
 exclude = ["gui*", "docs*", "config*"]
+
+[project.entry-points.'nomad.plugin']
+myapp = "custom_search_filters.apps:myapp"
