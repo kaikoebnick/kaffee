@@ -30,5 +30,5 @@ elastic:
 
 plugins:
   options:
-    custom-search-filters:
+    apps/custom-search-filters:
       python_package: custom-search-filters
