@@ -39,6 +39,7 @@ plugins = [
   "nomad-parser-plugins-atomistic>=1.0",
   "nomad-parser-plugins-workflow>=1.0",
   "nomad-parser-plugins-database>=1.0",
+  "custom_search_filters @ git+https://github.com/kaikoebnick/custom-search-filters.git"
 ]
 dev = ["nomad-lab[parsing, infrastructure, dev]>=1.3.4"]
 
@@ -50,6 +51,3 @@ constraint-dependencies = ["hyperspy>=1.7.6"]
 
 [tool.setuptools.packages.find]
 exclude = ["gui*", "docs*", "config*"]
-
-[project.entry-points.'nomad.plugin']
-myapp = "custom_search_filters.apps:myapp"
