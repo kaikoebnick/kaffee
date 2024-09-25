@@ -28,7 +28,7 @@ elastic:
   entries_index: nomad_oasis_entries_v1
   materials_index: nomad_oasis_materials_v1
 
-plugins:
-  options:
-    custom-search-filters:
-      python_package: custom-search-filters
+#plugins:
+  #options:
+    #custom-search-filters:
+      #python_package: custom-search-filters
