@@ -32,3 +32,6 @@ elastic:
   #options:
     #custom-search-filters:
       #python_package: custom-search-filters
+plugins:
+  entry_points:
+    exclude: ["nomad_plugin.parsers:myparser"]
