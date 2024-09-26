@@ -1008,6 +1008,15 @@ wheels = [
 ]
 
 [[package]]
+name = "custom-schema"
+version = "0.1.0"
+source = { git = "https://github.com/kaikoebnick/custom-schema.git?rev=840139c2024c68d2fb732c35f7e7ef1b969bf145#840139c2024c68d2fb732c35f7e7ef1b969bf145" }
+dependencies = [
+    { name = "nomad-lab" },
+    { name = "python-magic-bin", marker = "sys_platform == 'win32'" },
+]
+
+[[package]]
 name = "custom-search-filters"
 version = "0.1.0"
 source = { git = "https://github.com/kaikoebnick/custom-search-filters.git?rev=269635727d32475d04d0a055d9bcc6e39b75a4ca#269635727d32475d04d0a055d9bcc6e39b75a4ca" }
@@ -3696,6 +3705,7 @@ dev = [
     { name = "nomad-lab", extra = ["dev", "infrastructure", "parsing"] },
 ]
 plugins = [
+    { name = "custom-schema" },
     { name = "custom-search-filters" },
     { name = "eelsdbconverter" },
     { name = "nomad-aitoolkit" },
@@ -3719,6 +3729,7 @@ plugins = [
 
 [package.metadata]
 requires-dist = [
+    { name = "custom-schema", marker = "extra == 'plugins'", git = "https://github.com/kaikoebnick/custom-schema.git?rev=840139c2024c68d2fb732c35f7e7ef1b969bf145#840139c2024c68d2fb732c35f7e7ef1b969bf145" },
     { name = "custom-search-filters", marker = "extra == 'plugins'", git = "https://github.com/kaikoebnick/custom-search-filters.git?rev=269635727d32475d04d0a055d9bcc6e39b75a4ca#269635727d32475d04d0a055d9bcc6e39b75a4ca" },
     { name = "eelsdbconverter", marker = "extra == 'plugins'", git = "https://github.com/nomad-coe/nomad-parser-eelsdb.git?rev=entry-point" },
     { name = "nomad-aitoolkit", marker = "extra == 'plugins'", git = "https://github.com/FAIRmat-NFDI/nomad-aitoolkit.git?rev=b203f8eb28dc4b6771a39d5c5b7ad3d9d8583ac8#b203f8eb28dc4b6771a39d5c5b7ad3d9d8583ac8" },
