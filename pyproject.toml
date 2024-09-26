@@ -39,7 +39,7 @@ plugins = [
   "nomad-parser-plugins-atomistic>=1.0",
   "nomad-parser-plugins-workflow>=1.0",
   "nomad-parser-plugins-database>=1.0",
-  "custom-search-filters @ git+https://github.com/kaikoebnick/custom-search-filters.git@main",
+  "custom-search-filters @ git+https://github.com/kaikoebnick/custom-search-filters.git@27fe0279470cdc5b10f881b71e484b0bb9314f64",
 ]
 dev = ["nomad-lab[parsing, infrastructure, dev]>=1.3.4"]
 
