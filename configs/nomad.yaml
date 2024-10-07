@@ -29,6 +29,13 @@ elastic:
   entries_index: nomad_oasis_entries_v1
   materials_index: nomad_oasis_materials_v1
 
+ui:
+  apps:
+    options:
+      entries:
+        columns:
+          exclude: ['upload_create_time']
+
 #plugins:
   #options:
     #custom-schema:
