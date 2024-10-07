@@ -1,8 +1,15 @@
 services:
   api_host: "localhost"
   api_base_path: "/nomad-oasis"
-  admin_user_id: "Kai.Koebnick"
-
+  admin_user_id: "1057a0df-0b48-4840-9f57-3603fa59d0cb"
+  
+ui:
+  apps:
+    options:
+      entries:
+        columns:
+          exclude: ['upload_create_time']
+          
 oasis:
   is_oasis: true
   uses_central_user_management: true
@@ -29,13 +36,6 @@ mongo:
 elastic:
   entries_index: nomad_oasis_entries_v1
   materials_index: nomad_oasis_materials_v1
-
-ui:
-  apps:
-    options:
-      entries:
-        columns:
-          exclude: ['upload_create_time']
 
 #plugins:
   #options:
