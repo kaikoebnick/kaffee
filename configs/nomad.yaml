@@ -3,12 +3,12 @@ services:
   api_base_path: "/nomad-oasis"
   #admin_user_id: "1057a0df-0b48-4840-9f57-3603fa59d0cb"
   
-ui:
-  apps:
-    options:
-      entries:
-        columns:
-          exclude: ['upload_create_time']
+#ui:
+#  apps:
+#    options:
+#      entries:
+#        columns:
+#          exclude: ['upload_create_time']
           
 oasis:
   is_oasis: true
@@ -34,7 +34,7 @@ meta:
   deployment_url: "https://my-oasis.org/api"
   maintainer_email: "me@my-oasis.org"
 
-logstash:
+logtransfer:
   enabled: false
 
 mongo:
