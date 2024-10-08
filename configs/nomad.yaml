@@ -1,7 +1,7 @@
 services:
   api_host: "localhost"
   api_base_path: "/nomad-oasis"
-  #admin_user_id: "1057a0df-0b48-4840-9f57-3603fa59d0cb"
+  admin_user_id: "1057a0df-0b48-4840-9f57-3603fa59d0cb"
   
 #ui:
 #  apps:
