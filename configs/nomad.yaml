@@ -27,7 +27,7 @@ keycloak:
   public_server_url: 'http://localhost/keycloak/auth/'
   realm_name: nomad
   username: 'admin'
-  password: 'pwd'
+  password: 'password'
 
 meta:
   deployment: "oasis"
