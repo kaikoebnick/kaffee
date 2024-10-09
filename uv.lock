@@ -3647,7 +3647,7 @@ wheels = [
 
 [[package]]
 name = "nomad-lab"
-version = "1.3.8.dev28+g83ac7a03a"
+version = "1.3.8.dev32+g7a0d5ce7f"
 source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
 dependencies = [
     { name = "aniso8601" },
@@ -3689,7 +3689,7 @@ dependencies = [
     { name = "wrapt" },
     { name = "xarray" },
 ]
-sdist = { url = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/files/edec1458e18f25601838d2c8d7abfccba928e5a05e6a8d5d2c058ff7f2da2aa7/nomad-lab-1.3.8.dev28+g83ac7a03a.tar.gz", hash = "sha256:edec1458e18f25601838d2c8d7abfccba928e5a05e6a8d5d2c058ff7f2da2aa7" }
+sdist = { url = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/files/b5b35854bc78eebbae27b837008e9cd2a5dd5052602b2d8036fa91321a56001c/nomad-lab-1.3.8.dev32+g7a0d5ce7f.tar.gz", hash = "sha256:b5b35854bc78eebbae27b837008e9cd2a5dd5052602b2d8036fa91321a56001c" }
 
 [package.optional-dependencies]
 dev = [
