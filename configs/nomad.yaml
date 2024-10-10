@@ -4,9 +4,11 @@ services:
   admin_user_id: "1057a0df-0b48-4840-9f57-3603fa59d0cb"
   
 ui:
-  options:
-    entries:
-      label: "something_else"
+  apps:
+    exclude: ['app1']
+    options:
+      "app1": entries
+        
           
 oasis:
   is_oasis: true
