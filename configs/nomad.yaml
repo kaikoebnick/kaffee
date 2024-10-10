@@ -3,12 +3,9 @@ services:
   api_base_path: "/nomad-oasis"
   admin_user_id: "1057a0df-0b48-4840-9f57-3603fa59d0cb"
   
-#ui:
-#  apps:
-#    options:
-#      entries:
-#        columns:
-#          exclude: ['upload_create_time']
+ui:
+  apps:
+    exclude: ['entries', 'material']
           
 oasis:
   is_oasis: true
@@ -16,18 +13,18 @@ oasis:
 
 north:
   jupyterhub_crypt_key: "978bfb2e13a8448a253c629d8dd84ff89587f30e635b753153960930cad9d36d"
-  #hub_connect_ip: 'host.docker.internal'
+  #hub_connect_ip: 'host.docker.internal' # for Windows
   tools:
     options:
       jupyter:
         image: ghcr.io/kaikoebnick/kaffee/jupyter:main
 
-#keycloak:
-#  server_url: 'http://keycloak:8080/auth/'
-#  public_server_url: 'http://localhost/keycloak/auth/'
-#  realm_name: nomad
-#  username: 'admin'
-#  password: 'password'
+keycloak:
+  server_url: 'http://keycloak:8080/auth/'
+  public_server_url: 'http://localhost/keycloak/auth/'
+  realm_name: nomad
+  username: 'admin'
+  password: 'password'
 
 meta:
   deployment: "oasis"
