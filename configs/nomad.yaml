@@ -19,12 +19,12 @@ north:
       jupyter:
         image: ghcr.io/kaikoebnick/kaffee/jupyter:main
 
-keycloak:
-  server_url: 'http://keycloak:8080/auth/'
-  public_server_url: 'http://localhost/keycloak/auth/'
-  realm_name: nomad
-  username: 'admin'
-  password: 'password'
+#keycloak:
+#  server_url: 'http://keycloak:8080/auth/'
+#  public_server_url: 'http://localhost/keycloak/auth/'
+#  realm_name: nomad
+#  username: 'admin'
+#  password: 'password'
 
 meta:
   deployment: "oasis"
