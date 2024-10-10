@@ -5,9 +5,8 @@ services:
   
 ui:
   apps:
-    exclude: ['app1']
-    options:
-      "app1": entries
+    entries:
+      label: "Neuigkeit"
         
           
 oasis:
