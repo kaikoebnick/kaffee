@@ -32,7 +32,7 @@ north:
 meta:
   deployment: "oasis"
   deployment_url: "https://10.76.32.4:900/api"
-  maintainer_email: "me@my-oasis.org"
+  maintainer_email: "kai.koebnick@fau.de"
 
 logtransfer:
   enabled: false
