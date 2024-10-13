@@ -27,7 +27,7 @@ plugins = [
   "nomad-simulations==0.0.1",
   "pynxtools[convert]==0.5.0",
   "nomad-schema-plugin-run>=1.0.1",
-  #"nomad-schema-plugin-simulation-workflow>=1.0.1",
+  "nomad-schema-plugin-simulation-workflow>=1.0.1",
   "nomad-normalizer-plugin-bandstructure>=1.0",
   "nomad-normalizer-plugin-dos>=1.0",
   "nomad-normalizer-plugin-soap>=1.0",
