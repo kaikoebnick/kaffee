@@ -3589,6 +3589,7 @@ plugins = [
     { name = "nomad-parser-plugins-workflow" },
     { name = "nomad-porous-materials" },
     { name = "nomad-schema-plugin-run" },
+    { name = "nomad-schema-plugin-simulation-workflow" },
     { name = "nomad-simulations" },
     { name = "pynxtools", extra = ["convert"] },
 ]
@@ -3613,6 +3614,7 @@ requires-dist = [
     { name = "nomad-parser-plugins-workflow", marker = "extra == 'plugins'", specifier = ">=1.0" },
     { name = "nomad-porous-materials", marker = "extra == 'plugins'", git = "https://github.com/FAIRmat-NFDI/nomad-porous-materials.git?rev=522f4a3208077f534f1c5e886527ee2104283d0b#522f4a3208077f534f1c5e886527ee2104283d0b" },
     { name = "nomad-schema-plugin-run", marker = "extra == 'plugins'", specifier = ">=1.0.1" },
+    { name = "nomad-schema-plugin-simulation-workflow", marker = "extra == 'plugins'", specifier = ">=1.0.1" },
     { name = "nomad-simulations", marker = "extra == 'plugins'", specifier = "==0.0.1" },
     { name = "pynxtools", extras = ["convert"], marker = "extra == 'plugins'", specifier = "==0.5.0" },
 ]
