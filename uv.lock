@@ -210,18 +210,6 @@ wheels = [
 ]
 
 [[package]]
-name = "astroid"
-version = "3.3.3"
-source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
-dependencies = [
-    { name = "typing-extensions", marker = "python_full_version < '3.11'" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/fe/ba/1b405d964cb37060f331029fa6baedb4f39832c65e270aa435d9ea704c08/astroid-3.3.3.tar.gz", hash = "sha256:63f8c5370d9bad8294163c87b2d440a7fdf546be6c72bbeac0549c93244dbd72", size = 396377 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/f9/89/adc721e79479bf6d8171033bfa484d7f59da4e33ed4e85f74c421c138c7e/astroid-3.3.3-py3-none-any.whl", hash = "sha256:2d79acfd3c594b6a2d4141fea98a1d62ab4a52e54332b1f1ddcf07b652cc5c0f", size = 274374 },
-]
-
-[[package]]
 name = "asttokens"
 version = "2.4.1"
 source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
@@ -3601,7 +3589,6 @@ plugins = [
     { name = "nomad-parser-plugins-workflow" },
     { name = "nomad-porous-materials" },
     { name = "nomad-schema-plugin-run" },
-    { name = "nomad-schema-plugin-simulation-workflow" },
     { name = "nomad-simulations" },
     { name = "pynxtools", extra = ["convert"] },
 ]
@@ -3626,7 +3613,6 @@ requires-dist = [
     { name = "nomad-parser-plugins-workflow", marker = "extra == 'plugins'", specifier = ">=1.0" },
     { name = "nomad-porous-materials", marker = "extra == 'plugins'", git = "https://github.com/FAIRmat-NFDI/nomad-porous-materials.git?rev=522f4a3208077f534f1c5e886527ee2104283d0b#522f4a3208077f534f1c5e886527ee2104283d0b" },
     { name = "nomad-schema-plugin-run", marker = "extra == 'plugins'", specifier = ">=1.0.1" },
-    { name = "nomad-schema-plugin-simulation-workflow", marker = "extra == 'plugins'", specifier = ">=1.0.1" },
     { name = "nomad-simulations", marker = "extra == 'plugins'", specifier = "==0.0.1" },
     { name = "pynxtools", extras = ["convert"], marker = "extra == 'plugins'", specifier = "==0.5.0" },
 ]
@@ -3645,7 +3631,7 @@ wheels = [
 
 [[package]]
 name = "nomad-lab"
-version = "1.3.8.dev44+g357477412"
+version = "1.3.8.dev55+g11178230f"
 source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
 dependencies = [
     { name = "aniso8601" },
@@ -3687,12 +3673,11 @@ dependencies = [
     { name = "wrapt" },
     { name = "xarray" },
 ]
-sdist = { url = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/files/0f02cb5b69e944e5e8c076243a9396cc07c63c45dca31aae9a2dc2dcdbad1eb8/nomad-lab-1.3.8.dev44+g357477412.tar.gz", hash = "sha256:0f02cb5b69e944e5e8c076243a9396cc07c63c45dca31aae9a2dc2dcdbad1eb8" }
+sdist = { url = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/files/b3f2086164091d6aa9ee4fdfd57aefae2ee192978a790f462c29d90e2715626b/nomad-lab-1.3.8.dev55+g11178230f.tar.gz", hash = "sha256:b3f2086164091d6aa9ee4fdfd57aefae2ee192978a790f462c29d90e2715626b" }
 
 [package.optional-dependencies]
 dev = [
     { name = "aiosmtpd" },
-    { name = "astroid" },
     { name = "devtools" },
     { name = "essential-generators" },
     { name = "markupsafe" },
