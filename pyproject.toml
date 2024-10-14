@@ -52,3 +52,6 @@ constraint-dependencies = ["hyperspy>=1.7.6"]
 
 [tool.setuptools.packages.find]
 exclude = ["gui*", "docs*", "config*"]
+
+#[tool.setuptools.exclude-package-data]
+
