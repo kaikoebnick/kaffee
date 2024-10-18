@@ -51,4 +51,4 @@ extra-index-url = [
 constraint-dependencies = ["hyperspy>=1.7.6"]
 
 [tool.setuptools.packages.find]
-exclude = ["gui*", "docs*", "config*"]
+exclude = ["gui*", "docs*", "config*", "data*"]
