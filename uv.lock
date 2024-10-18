@@ -3581,8 +3581,8 @@ plugins = [
     { name = "nomad-parser-plugins-database" },
     { name = "nomad-parser-plugins-electronic" },
     { name = "nomad-parser-plugins-workflow" },
-    { name = "nomad-schema-plugin-run" },
-    { name = "nomad-schema-plugin-simulation-workflow" },
+    #{ name = "nomad-schema-plugin-run" },
+    #{ name = "nomad-schema-plugin-simulation-workflow" },
     { name = "pynxtools", extra = ["convert"] },
 ]
 
@@ -3603,8 +3603,8 @@ requires-dist = [
     { name = "nomad-parser-plugins-database", marker = "extra == 'plugins'", specifier = ">=1.0" },
     { name = "nomad-parser-plugins-electronic", marker = "extra == 'plugins'", specifier = ">=1.0" },
     { name = "nomad-parser-plugins-workflow", marker = "extra == 'plugins'", specifier = ">=1.0" },
-    { name = "nomad-schema-plugin-run", marker = "extra == 'plugins'", specifier = ">=1.0.1" },
-    { name = "nomad-schema-plugin-simulation-workflow", marker = "extra == 'plugins'", specifier = ">=1.0.1" },
+    #{ name = "nomad-schema-plugin-run", marker = "extra == 'plugins'", specifier = ">=1.0.1" },
+    #{ name = "nomad-schema-plugin-simulation-workflow", marker = "extra == 'plugins'", specifier = ">=1.0.1" },
     { name = "pynxtools", extras = ["convert"], marker = "extra == 'plugins'", specifier = "==0.5.0" },
 ]
 
@@ -3770,7 +3770,7 @@ version = "1.0"
 source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
 dependencies = [
     { name = "nomad-lab" },
-    { name = "nomad-schema-plugin-simulation-workflow" },
+    #{ name = "nomad-schema-plugin-simulation-workflow" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/39/47/c3896d87e04285fd4482e607043bedce4bfe051ea380fec156aa36b8fb1c/nomad_normalizer_plugin_simulation_workflow-1.0.tar.gz", hash = "sha256:7472e63c9abbc64b0281c68c9122e561390d14fc070c859328fd95b9fdb9fdcf", size = 7442 }
 wheels = [
@@ -3839,8 +3839,8 @@ dependencies = [
     { name = "mdanalysis" },
     { name = "nomad-lab" },
     { name = "nomad-parser-plugins-simulation" },
-    { name = "nomad-schema-plugin-run" },
-    { name = "nomad-schema-plugin-simulation-workflow" },
+    #{ name = "nomad-schema-plugin-run" },
+    #{ name = "nomad-schema-plugin-simulation-workflow" },
     { name = "panedr" },
     { name = "pydantic" },
     { name = "scipy" },
@@ -3856,8 +3856,8 @@ version = "1.0"
 source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
 dependencies = [
     { name = "nomad-lab" },
-    { name = "nomad-schema-plugin-run" },
-    { name = "nomad-schema-plugin-simulation-workflow" },
+    #{ name = "nomad-schema-plugin-run" },
+    #{ name = "nomad-schema-plugin-simulation-workflow" },
     { name = "pydantic" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/92/cc/bb7a40e3568ef963ace5ea5235b2af4d28f090c4bfefe34fa0867392502a/nomad_parser_plugins_database-1.0.tar.gz", hash = "sha256:38ea385f77e9fff790449b28c96a1c9d4c750a007d7b349db53d1b8f5d1cca0b", size = 17060 }
@@ -3875,8 +3875,8 @@ dependencies = [
     { name = "netcdf4" },
     { name = "nomad-lab" },
     { name = "nomad-parser-plugins-simulation" },
-    { name = "nomad-schema-plugin-run" },
-    { name = "nomad-schema-plugin-simulation-workflow" },
+    #{ name = "nomad-schema-plugin-run" },
+    #{ name = "nomad-schema-plugin-simulation-workflow" },
     { name = "pydantic" },
     { name = "pyyaml" },
 ]
@@ -3891,7 +3891,7 @@ version = "1.0.2"
 source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
 dependencies = [
     { name = "nomad-lab" },
-    { name = "nomad-schema-plugin-run" },
+    #{ name = "nomad-schema-plugin-run" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/07/90/478c4140d9ae9710d03e9bc297af111b56b4fb5ce175fc2d38bfdbd84cc9/nomad_parser_plugins_simulation-1.0.2.tar.gz", hash = "sha256:08d0ca7ee97819de2a80fbdca742a926a40f464dc17d57cafb2d51ab52ad5dd3", size = 11528 }
 wheels = [
@@ -3907,8 +3907,8 @@ dependencies = [
     { name = "h5py" },
     { name = "lxml" },
     { name = "nomad-lab" },
-    { name = "nomad-schema-plugin-run" },
-    { name = "nomad-schema-plugin-simulation-workflow" },
+    #{ name = "nomad-schema-plugin-run" },
+    #{ name = "nomad-schema-plugin-simulation-workflow" },
     { name = "phonopy" },
     { name = "pydantic" },
     { name = "xarray" },
@@ -3918,33 +3918,33 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/31/59/016925d317e2dda3092b5a353db018c8cbdf38315256a56f7545ffb21fe9/nomad_parser_plugins_workflow-1.0-py3-none-any.whl", hash = "sha256:221915010af3d3f25e6bcd009101da1430eb9955ef4fc6b88114f3b7a482e01a", size = 107615 },
 ]
 
-[[package]]
-name = "nomad-schema-plugin-run"
-version = "1.0.2"
-source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
-dependencies = [
-    { name = "nomad-lab" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/cb/23/ba62d935c69fcfb9e70071bb5409e9d6f7513a2cdbcdd7c7fc147af60007/nomad_schema_plugin_run-1.0.2.tar.gz", hash = "sha256:07e3e4946d733111d08e03bdb85a0d18339086a1efbaac6c76071c07214571de", size = 138143 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/45/34/2cea78ac455fa5bca4c5bd05740c1579ba352deaba3ab1e11ffa8a7631ae/nomad_schema_plugin_run-1.0.2-py3-none-any.whl", hash = "sha256:744762c060b9d5b78c82663b923aa3756249798b42b3909408a959a1c87c388b", size = 45238 },
-]
+#[[package]]
+#name = "nomad-schema-plugin-run"
+#version = "1.0.2"
+#source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
+#dependencies = [
+#    { name = "nomad-lab" },
+#]
+#sdist = { url = "https://files.pythonhosted.org/packages/cb/23/ba62d935c69fcfb9e70071bb5409e9d6f7513a2cdbcdd7c7fc147af60007/nomad_schema_plugin_run-1.0.2.tar.gz", hash = "sha256:07e3e4946d733111d08e03bdb85a0d18339086a1efbaac6c76071c07214571de", size = 138143 }
+#wheels = [
+#    { url = "https://files.pythonhosted.org/packages/45/34/2cea78ac455fa5bca4c5bd05740c1579ba352deaba3ab1e11ffa8a7631ae/nomad_schema_plugin_run-1.0.2-py3-none-any.whl", hash = "sha256:744762c060b9d5b78c82663b923aa3756249798b42b3909408a959a1c87c388b", size = 45238 },
+#]
 
-[[package]]
-name = "nomad-schema-plugin-simulation-workflow"
-version = "1.0.4"
-source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
-dependencies = [
-    { name = "mdanalysis" },
-    { name = "networkx" },
-    { name = "nomad-lab" },
-    { name = "nomad-schema-plugin-run" },
-    { name = "scipy" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/4d/51/2df7a0c5442d9f41cb25cfe99ad5d665683eb051705393a66928d8f79aeb/nomad_schema_plugin_simulation_workflow-1.0.4.tar.gz", hash = "sha256:5c25dc7fa378b85e0a08248e402b4ce6ead996665418562704ec969797529dd6", size = 8866404 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/b1/ea/cf464e79892bd215ff3c0a737d4a32ae63c049f5f75b006bc05c8c78cdbf/nomad_schema_plugin_simulation_workflow-1.0.4-py3-none-any.whl", hash = "sha256:3fee5e43970000f1bbe9ecd77adb9f00d16641cafb6a6d42ad71031b577e5b5a", size = 55136 },
-]
+#[[package]]
+#name = "nomad-schema-plugin-simulation-workflow"
+#version = "1.0.4"
+#source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
+#dependencies = [
+#    { name = "mdanalysis" },
+#    { name = "networkx" },
+#    { name = "nomad-lab" },
+#    { name = "nomad-schema-plugin-run" },
+#    { name = "scipy" },
+#]
+#sdist = { url = "https://files.pythonhosted.org/packages/4d/51/2df7a0c5442d9f41cb25cfe99ad5d665683eb051705393a66928d8f79aeb/nomad_schema_plugin_simulation_workflow-1.0.4.tar.gz", hash = "sha256:5c25dc7fa378b85e0a08248e402b4ce6ead996665418562704ec969797529dd6", size = 8866404 }
+#wheels = [
+#    { url = "https://files.pythonhosted.org/packages/b1/ea/cf464e79892bd215ff3c0a737d4a32ae63c049f5f75b006bc05c8c78cdbf/nomad_schema_plugin_simulation_workflow-1.0.4-py3-none-any.whl", hash = "sha256:3fee5e43970000f1bbe9ecd77adb9f00d16641cafb6a6d42ad71031b577e5b5a", size = 55136 },
+#]
 
 [[package]]
 name = "notebook"
