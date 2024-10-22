@@ -1653,7 +1653,7 @@ wheels = [
 [[package]]
 name = "laserphysics-app"
 version = "0.1.0"
-source = { git = "https://github.com/kaikoebnick/laserphysics-app.git?rev=5a0f7d6d1057eeb19f29d3a530d6a9ed75c6b4f4#5a0f7d6d1057eeb19f29d3a530d6a9ed75c6b4f4" }
+source = { git = "https://github.com/kaikoebnick/laserphysics-app.git?rev=748072f1db70d917944f84f6452376974e0f6704#748072f1db70d917944f84f6452376974e0f6704" }
 dependencies = [
     { name = "nomad-lab" },
     { name = "python-magic-bin", marker = "sys_platform == 'win32'" },
@@ -2352,7 +2352,7 @@ plugins = [
 [package.metadata]
 requires-dist = [
     { name = "custom-schema", marker = "extra == 'plugins'", git = "https://github.com/kaikoebnick/custom-schema.git?rev=caaec61bfd1791b89f9a339443493d89ca9c87e3#caaec61bfd1791b89f9a339443493d89ca9c87e3" },
-    { name = "laserphysics-app", marker = "extra == 'plugins'", git = "https://github.com/kaikoebnick/laserphysics-app.git?rev=5a0f7d6d1057eeb19f29d3a530d6a9ed75c6b4f4#5a0f7d6d1057eeb19f29d3a530d6a9ed75c6b4f4" },
+    { name = "laserphysics-app", marker = "extra == 'plugins'", git = "https://github.com/kaikoebnick/laserphysics-app.git?rev=748072f1db70d917944f84f6452376974e0f6704#748072f1db70d917944f84f6452376974e0f6704" },
     { name = "nomad-lab", extras = ["parsing", "infrastructure"], specifier = ">=1.3.4" },
     { name = "nomad-lab", extras = ["parsing", "infrastructure", "dev"], marker = "extra == 'dev'", specifier = ">=1.3.4" },
 ]
