@@ -2334,7 +2334,7 @@ plugins = [
 requires-dist = [
     { name = "nomad-lab", extras = ["parsing", "infrastructure"], specifier = ">=1.3.4" },
     { name = "nomad-lab", extras = ["parsing", "infrastructure", "dev"], marker = "extra == 'dev'", specifier = ">=1.3.4" },
-    { name = "nomad-laserphysics", marker = "extra == 'plugins'", git = "https://github.com/kaikoebnick/nomad-laserphysics.git?rev=117dba1aee9c207a8e3e9a0924ee801de39b1757#117dba1aee9c207a8e3e9a0924ee801de39b1757" },
+    { name = "nomad-laserphysics", marker = "extra == 'plugins'", git = "https://github.com/kaikoebnick/nomad-laserphysics.git?rev=9a81eb195b6cd7f94bce7c6b50786174234c2dde#9a81eb195b6cd7f94bce7c6b50786174234c2dde" },
 ]
 
 [[package]]
@@ -2459,7 +2459,7 @@ parsing = [
 [[package]]
 name = "nomad-laserphysics"
 version = "0.1.0"
-source = { git = "https://github.com/kaikoebnick/nomad-laserphysics.git?rev=117dba1aee9c207a8e3e9a0924ee801de39b1757#117dba1aee9c207a8e3e9a0924ee801de39b1757" }
+source = { git = "https://github.com/kaikoebnick/nomad-laserphysics.git?rev=9a81eb195b6cd7f94bce7c6b50786174234c2dde#9a81eb195b6cd7f94bce7c6b50786174234c2dde" }
 dependencies = [
     { name = "nomad-lab" },
     { name = "python-magic-bin", marker = "sys_platform == 'win32'" },
