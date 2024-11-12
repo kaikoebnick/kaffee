@@ -148,7 +148,3 @@ RUN --mount=type=cache,target=/root/.cache/uv \
 # Get rid ot the following message when you open a terminal in jupyterlab:
 # groups: cannot find name for group ID 11320
 RUN touch ${HOME}/.hushlogin
-
-# Get right time using NTP
-RUN apt-get update && apt-get install -y ntp && apt-get clean
-CMD ["/usr/sbin/ntpd", "-g", "-n"]
