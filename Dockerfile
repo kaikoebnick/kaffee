@@ -150,5 +150,5 @@ RUN --mount=type=cache,target=/root/.cache/uv \
 RUN touch ${HOME}/.hushlogin
 
 # Get right time using NTP
-RUN apt-get update && apt-get install -y ntp
+RUN apt-get update && apt-get install -y ntp && apt-get clean
 CMD ["/usr/sbin/ntpd", "-g", "-n"]
