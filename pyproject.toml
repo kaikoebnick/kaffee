@@ -39,7 +39,7 @@ plugins = [
   #"nomad-parser-plugins-atomistic>=1.0",
   #"nomad-parser-plugins-workflow>=1.0",
   #"nomad-parser-plugins-database>=1.0",
-  "nomad-laserphysics @ git+https://github.com/kaikoebnick/nomad-laserphysics.git@fb76f4716310265c8a4c7e73a4fe2c070f2a20d5",
+  "nomad-laserphysics @ git+https://github.com/kaikoebnick/nomad-laserphysics.git@810e46ddd7f92600a4856d5d46c4915ce62fc523",
 ]
 dev = ["nomad-lab[parsing, infrastructure, dev]>=1.3.4"]
 
