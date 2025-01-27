@@ -127,11 +127,11 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 USER root
 
-RUN apt update \
- && apt install --yes --quiet --no-install-recommends \
-        libmagic-dev \
- && rm -rf /var/lib/apt/lists/*
-
+RUN apt-get update \
+ && apt-get install --yes --quiet --no-install-recommends \
+       libmagic1 \
+       # clean cache and logs
+       && rm -rf /var/lib/apt/lists/* /var/log/* /var/tmp/* ~/.npm
 
 # Switch back to jovyan to avoid accidental container runs as root
 USER ${NB_UID}
@@ -142,7 +142,7 @@ COPY --from=ghcr.io/astral-sh/uv:0.4 /uv /bin/uv
 RUN --mount=type=cache,target=/root/.cache/uv \
     --mount=type=bind,source=uv.lock,target=uv.lock \
     --mount=type=bind,source=pyproject.toml,target=pyproject.toml \
-    uv export --extra plugins | uv pip install -r /dev/stdin --system
+    uv export --extra plugins --extra jupyter | uv pip install -r /dev/stdin --system
 
 
 # Get rid ot the following message when you open a terminal in jupyterlab:
