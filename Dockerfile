@@ -151,15 +151,13 @@ RUN --mount=type=cache,target=/root/.cache/uv \
 RUN touch ${HOME}/.hushlogin
 
 
-# Installiere Plugins bei der Erstellung
+# Install Plugins
 RUN --mount=type=cache,target=/root/.cache/uv \
     --mount=type=bind,source=uv.lock,target=uv.lock \
     --mount=type=bind,source=pyproject.toml,target=pyproject.toml \
     uv sync --extra plugins --frozen --no-install-project
 
-# Installiere die Plugins bei jedem Container-Start
+# Installiere plugins when starting
 COPY update_plugins.sh /usr/local/bin/update_plugins.sh
 RUN chmod +x /usr/local/bin/update_plugins.sh
-
-# Führen Sie das Skript bei Containerstart aus
 ENTRYPOINT ["/usr/local/bin/update_plugins.sh"]
