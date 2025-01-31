@@ -1,5 +1,5 @@
 #!/bin/bash
 set -e
 
-# Plugins aktualisieren
+# load plugins
 uv install
