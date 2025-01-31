@@ -2371,15 +2371,11 @@ dependencies = [
 dev = [
     { name = "nomad-lab", extra = ["dev", "infrastructure", "parsing"] },
 ]
-plugins = [
-    { name = "nomad-laserphysics" },
-]
 
 [package.metadata]
 requires-dist = [
     { name = "nomad-lab", extras = ["parsing", "infrastructure"], specifier = ">=1.3.4" },
     { name = "nomad-lab", extras = ["parsing", "infrastructure", "dev"], marker = "extra == 'dev'", specifier = ">=1.3.4" },
-    { name = "nomad-laserphysics", marker = "extra == 'plugins'", git = "https://github.com/kaikoebnick/nomad-laserphysics.git?rev=main" },
 ]
 
 [[package]]
@@ -2503,15 +2499,6 @@ parsing = [
     { name = "netcdf4" },
     { name = "python-magic-bin", marker = "sys_platform == 'win32'" },
     { name = "rdkit" },
-]
-
-[[package]]
-name = "nomad-laserphysics"
-version = "0.1.0"
-source = { git = "https://github.com/kaikoebnick/nomad-laserphysics.git?rev=main#0ba37c398f3ef93175d2e2936ebfa03ba717c134" }
-dependencies = [
-    { name = "nomad-lab" },
-    { name = "python-magic-bin", marker = "sys_platform == 'win32'" },
 ]
 
 [[package]]
