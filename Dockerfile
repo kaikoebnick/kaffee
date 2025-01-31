@@ -61,6 +61,10 @@ ENV RUNTIME=docker
 
 WORKDIR /app
 
+#load latest version of the plugin
+COPY pyproject.toml poetry.lock ./
+RUN pip install --no-cache-dir -e . 
+
 RUN apt-get update \
  && apt-get install --yes --quiet --no-install-recommends \
       libgomp1 \
