@@ -59,11 +59,7 @@ ENV PYTHONDONTWRITEBYTECODE=1
 
 ENV RUNTIME=docker
 
-WORKDIR /app
-
-#load latest version of the plugin
-COPY pyproject.toml poetry.lock ./
-RUN pip install --no-cache-dir -e . 
+WORKDIR /app 
 
 RUN apt-get update \
  && apt-get install --yes --quiet --no-install-recommends \
@@ -153,3 +149,17 @@ RUN --mount=type=cache,target=/root/.cache/uv \
 # Get rid ot the following message when you open a terminal in jupyterlab:
 # groups: cannot find name for group ID 11320
 RUN touch ${HOME}/.hushlogin
+
+
+# Installiere Plugins bei der Erstellung
+RUN --mount=type=cache,target=/root/.cache/uv \
+    --mount=type=bind,source=uv.lock,target=uv.lock \
+    --mount=type=bind,source=pyproject.toml,target=pyproject.toml \
+    uv sync --extra plugins --frozen --no-install-project
+
+# Installiere die Plugins bei jedem Container-Start
+COPY update_plugins.sh /usr/local/bin/update_plugins.sh
+RUN chmod +x /usr/local/bin/update_plugins.sh
+
+# Führen Sie das Skript bei Containerstart aus
+ENTRYPOINT ["/usr/local/bin/update_plugins.sh"]
