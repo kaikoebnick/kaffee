@@ -21,7 +21,7 @@ dependencies = ["nomad-lab[parsing, infrastructure]>=1.3.4"]
 
 [project.optional-dependencies] 
 plugins = [ 
-  "nomad-laserphysics @ git+https://github.com/kaikoebnick/nomad-laserphysics.git@2bb0b241a5535b1169f052c99623791077db052b",
+  "nomad-laserphysics @ git+https://github.com/kaikoebnick/nomad-laserphysics.git@23a23ec7a4cab07cbfcd65df4d6931b73e3b243f",
 ]
 jupyter = []
 dev = ["nomad-lab[parsing, infrastructure, dev]>=1.3.4"]
