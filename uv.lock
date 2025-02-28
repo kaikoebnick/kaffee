@@ -2474,7 +2474,7 @@ plugins = [
 requires-dist = [
     { name = "nomad-lab", extras = ["parsing", "infrastructure"], specifier = ">=1.3.4" },
     { name = "nomad-lab", extras = ["parsing", "infrastructure", "dev"], marker = "extra == 'dev'", specifier = ">=1.3.4" },
-    { name = "nomad-laserphysics", marker = "extra == 'plugins'", git = "https://github.com/kaikoebnick/nomad-laserphysics.git?rev=9471a3367244891aeadd9fc27b636b05417055ca" },
+    { name = "nomad-laserphysics", marker = "extra == 'plugins'", git = "https://github.com/kaikoebnick/nomad-laserphysics.git?rev=46652c844492b87287800c48ff33112552e418e1" },
 ]
 provides-extras = ["plugins", "jupyter", "dev"]
 
@@ -2738,7 +2738,7 @@ parsing = [
 [[package]]
 name = "nomad-laserphysics"
 version = "0.1.0"
-source = { git = "https://github.com/kaikoebnick/nomad-laserphysics.git?rev=9471a3367244891aeadd9fc27b636b05417055ca#9471a3367244891aeadd9fc27b636b05417055ca" }
+source = { git = "https://github.com/kaikoebnick/nomad-laserphysics.git?rev=46652c844492b87287800c48ff33112552e418e1#46652c844492b87287800c48ff33112552e418e1" }
 dependencies = [
     { name = "nomad-lab", version = "1.3.13", source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }, marker = "python_full_version < '3.10'" },
     { name = "nomad-lab", version = "1.3.14", source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }, marker = "python_full_version >= '3.10'" },
